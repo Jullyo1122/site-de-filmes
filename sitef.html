@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineverse</title>
+    <link rel="stylesheet" href="sitef.css">
+</head>
+<body>
+    <header class="cabeca">
+        <h1 class="logo">CINEVERSE</h1>
+        <form class="pesquisar" id="search-form">
+            <input type="text" placeholder="Pesquisar..." name="pesquisa" id="search-input" class="pesquisa" autocomplete="off" >
+            <button type="submit" class="botaopesquisa"><img src="magnifier-1_icon-icons.com_56924 (1).png" alt="lupa"></button>
+        </form>
+        <button class="entrar">Entrar</button>
+        <button class="registrar">Registrar</button>
+        <button class="tracos" onclick="menuShow()"><img src="menu-hamburguer__3_-removebg-preview.png" alt="icone"></button>
+        <div class="menu-ico">
+            <ul class="menu-listas">
+                <li class="nav-item"><a href="#" class="nav-link"></a>Inicio</li>
+                <li class="nav-item"><a href="#" class="nav-link"></a>Projeto</li>
+                <li class="nav-item"><a href="#" class="nav-link"></a>Sobre</li>
+                <button class="voltar" onclick="menuRemove()"><img src="cruz.png" alt="voltar"></button>
+            </ul>
+        </div>
+    </header>
+    <main class="principal">
+        <h1 class="destaques">Destaques<br>da semana</h1>
+        <img src="Inserir_um_título__8_-removebg-preview.png" alt="quadrado" class="quadrado">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+
+                <div class="slide first">
+                    <img src="clube da luta2.png" alt="imagem1">
+                </div>
+                <div class="slide">
+                    <img src="djangolivre03.jpg" alt="imagem2">
+                </div>
+                <div class="slide">
+                    <img src="pulpfiction.jpg" alt="imagem3">
+                </div>
+                <div class="slide">
+                    <img src="inglourious basterds1.png" alt="imagem4">
+                </div>
+                <div class="slide">
+                    <img src="interstellar-trailer-(1).jpg" alt="imagem5">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+            </div>
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+        </div>
+        <h1 class="recomend">Recomendados</h1>
+        <div class="listas">
+            <div class="item">
+                <img src="https://image.tmdb.org/t/p/w200/n8fuS2uDDykO4P3RBPKLhWs0Ffj.jpg" alt="poster">
+                <h1>Bastardos Inglórios</h1>
+            </div>
+            <div class="item">
+                <img src="https://image.tmdb.org/t/p/w200/r3pPehX4ik8NLYPpbDRAh0YRtMb.jpg" alt="poster">
+                <h1>Clube da Luta</h1>
+            </div>
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/M/MV5BZmMyYzJlZmYtY2I3NC00NjAyLTkyZWItZjdjZDI1YTYyYTEwXkEyXkFqcGc@._V1_SX300.jpg" alt="poster">
+                <h1>Kill Bill vol.1</h1>
+            </div>
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/M/MV5BZDNhMGYwM2UtMTdlZS00MGQ1LWI2YzAtODY5YWI1MjYyNzRmXkEyXkFqcGc@._V1_SX300.jpg" alt="poster">
+                <h1>Taxi Driver</h1>
+            </div>
+            <div class="item">
+                <img src="https://m.media-amazon.com/images/M/MV5BNDUzYjY0NmUtMDM4OS00Y2Q5LWJiODYtNTk0ZTk0YjZhMTg1XkEyXkFqcGc@._V1_SX300.jpg" alt="poster">
+                <h1>Scarface</h1>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="sitef.js"></script>
+</body>
+</html>

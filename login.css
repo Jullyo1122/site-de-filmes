@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Exo 2", serif;
+    background-color: #253031;
+}
+.cabeca{
+    background-color: #253031;
+}
+.logo{
+    text-align: center;
+    color: #FF595E;
+}
+.entrar{
+    display: flex;
+    position: relative;
+    padding: 15px 25px;
+    top: -35px;
+    left: 1090px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2978A0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.entrar:hover{
+    background-color: #3aa5db;
+    transform: scale(1.1);
+}
+.entrar:active{
+    transform: scale(1);
+}
+.registrar{
+    display: flex;
+    position: relative;
+    padding: 15px 25px;
+    top: -60px;
+    left: 1190px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2978A0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.registrar:hover{
+    background-color: #3aa5db;
+    transform: scale(1.1);
+}
+.registrar:active{
+    transform: scale(1);
+}
+#container-login{
+    color: #FF595E;
+    display: grid;
+    place-items: center;
+    background-color: #000000;
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    position: relative;
+    left: 445px;
+    top: -50px;
+}
+#titulo-login{
+    position: relative;
+    font-size: 1.1cm;
+    right: 20px;
+}
+#campo-de-email{
+    position: relative;
+    right: 27px;
+    margin: 50px;
+    width: 400px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF595E;
+
+}

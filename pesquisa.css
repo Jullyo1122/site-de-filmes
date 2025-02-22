@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    font-family: "Exo 2", serif;
+    background-color: #253031;
+}
+
+.cuca{
+    background-color: #253031;
+    justify-content: space-between;
+    align-items: center;
+}
+.cuca a {
+    text-decoration: none; 
+    color: inherit; 
+  }
+.logo{
+    text-align: center;
+    color: #FF595E;
+ 
+}
+.pesquisa {
+    display: block; 
+    margin: 0 auto; 
+    padding: 10px;
+    font-size: 16px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: #FF595E;
+    outline: none;
+    border: 2px solid #253031;
+    transition: border-color 0.3s;
+}
+.pesquisa:focus{
+    border-color: #FF595E;
+}
+.botaopesquisa{
+    display: flex;
+    position: relative;
+    top: -40px;
+    left: -340px;
+    font-size: 8px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #253031;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.3s;
+}
+.botaopesquisa:hover{
+    transform: scale(1.1);
+}
+.botaopesquisa:active{
+    transform: scale(1);
+}
+.entrar{
+    display: flex;
+    position: relative;
+    padding: 15px 25px;
+    top: -135px;
+    left: 1090px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2978A0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.entrar:hover{
+    background-color: #3aa5db;
+    transform: scale(1.1);
+}
+.entrar:active{
+    transform: scale(1);
+}
+.registrar{
+    display: flex;
+    position: relative;
+    padding: 15px 25px;
+    top: -180px;
+    left: 1190px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2978A0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.registrar:hover{
+    background-color: #3aa5db;
+    transform: scale(1.1);
+}
+.registrar:active{
+    transform: scale(1);
+}
+.tracos{
+    display: flex;
+    position: relative;
+    background-color: #253031;
+    border: none;
+    top: -230px;
+    left: 150px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.tracos:hover{
+    transform: scale(1.1);
+}
+.tracos:active{
+    transform: scale(1);
+}
+.menu-ico{
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+.menu-listas{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    top: -200px;
+    background-color: #FF595E;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+.menu-listas .nav-item{
+    display: block;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.menu-listas .nav-item:hover {
+    color: #FFFFFF; 
+}
+.open{
+    display: block;
+}
+
+#search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; 
+    padding: 20px;
+  }
+  
+  .movie {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px;
+    width: 200px;
+    border: 2px solid #FF595E;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .movie:hover{
+    background-color: #FF595E;
+    cursor: pointer;
+  }
+  .resultadosdapesquisa h1{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: -150px;
+    color: #FFFFFF;
+  }
+  
