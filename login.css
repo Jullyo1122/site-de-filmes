@@ -4,9 +4,16 @@ body{
     font-family: "Exo 2", serif;
     background-color: #253031;
 }
-.cabeca{
+
+.cuca{
     background-color: #253031;
+    justify-content: space-between;
+    align-items: center;
 }
+.cuca a {
+    text-decoration: none; 
+    color: inherit; 
+  }
 .logo{
     text-align: center;
     color: #FF595E;
@@ -15,7 +22,7 @@ body{
     display: flex;
     position: relative;
     padding: 15px 25px;
-    top: -35px;
+    top: -60px;
     left: 1090px;
     border-radius: 10px;
     border: none;
@@ -34,7 +41,7 @@ body{
     display: flex;
     position: relative;
     padding: 15px 25px;
-    top: -60px;
+    top: -105px;
     left: 1190px;
     border-radius: 10px;
     border: none;
@@ -53,6 +60,7 @@ body{
     color: #FF595E;
     display: grid;
     place-items: center;
+    align-items: center;
     background-color: #000000;
     width: 450px;
     height: 450px;
@@ -64,16 +72,76 @@ body{
 #titulo-login{
     position: relative;
     font-size: 1.1cm;
-    right: 20px;
+    right: 25px;
 }
 #campo-de-email{
     position: relative;
-    right: 27px;
+    top: -20px;
+    right: 70px;
     margin: 50px;
     width: 400px;
     height: 45px;
     border-radius: 10px;
     border: none;
     background-color: #FF595E;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 
+}
+#campo-de-email:hover{
+    transform: scale(1.1);
+    background-color: #ff595fb0;
+}
+#campo-de-email:active{
+    transform: scale(1);
+}
+#campo-de-senha{
+    position: relative;
+    top: -20px;
+    right: 70px;
+    margin: 50px;
+    width: 400px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF595E;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+#campo-de-senha:hover{
+    background-color: #ff595fb0;
+    transform: scale(1.1);
+}
+#campo-de-senha:active{
+    transform: scale(1);
+}
+#email-paragrafo{
+    position: relative;
+    left: 45px;
+    font-size: 1.3rem;
+}
+#senha-paragrafo{
+    position: relative;
+    left: 45px;
+    font-size: 1.3rem;
+    top: -60px;
+}
+#botao-de-entrar{
+    position: relative;
+    top: -130px;
+    right: 25px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2978A0;
+    cursor: pointer;
+    transition: background-color, transform 0.3s;
+}
+#botao-de-entrar:hover{
+    background-color: #3aa5db;
+    transform: scale(1.1);
+}
+#botao-de-entrar:active{
+    transform: scale(1);
 }

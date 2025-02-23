@@ -57,6 +57,7 @@ body{
     left: 1090px;
     border-radius: 10px;
     border: none;
+    text-decoration: none;
     background-color: #2978A0;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
