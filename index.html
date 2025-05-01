@@ -15,13 +15,15 @@
         </form>
         <button class="entrar" onclick="window.location.href='login.html'">Entrar</button>
         <button class="registrar">Registrar</button>
-        <button class="tracos" onclick="menuShow()"><img src="imgs/menu-hamburguer__3_-removebg-preview.png" alt="icone"></button>
-        <div class="menu-ico">
+        <button class="tracos" onclick="toggleMenu()"><img src="imgs/menu-hamburguer__3_-removebg-preview.png" alt="icone"></button>
+        <div class="menu-ico" id="menu">
             <ul class="menu-listas">
                 <li class="nav-item"><a href="#" class="nav-link"></a>Inicio</li>
                 <li class="nav-item"><a href="#" class="nav-link"></a>Projeto</li>
                 <li class="nav-item"><a href="#" class="nav-link"></a>Sobre</li>
-                <button class="voltar" onclick="menuRemove()"><img src="imgs/cruz.png" alt="voltar"></button>
+                <button class="voltar" onclick="toggleMenu()">
+                    <img src="imgs/cruz.png" alt="voltar">
+                </button>
             </ul>
         </div>
     </header>

@@ -13,14 +13,12 @@ function nextImage(){
     document.getElementById("radio"+count).checked = true;
 }
 
-function menuShow(){
-    let menuMobile = document.querySelector('.menu-ico');
-    menuMobile.classList.add('open')
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
 }
-function menuRemove(){
-    let menuMobile = document.querySelector('.menu-ico');
-    menuMobile.classList.remove('open')
-}
+
+
 const apiKey = 'ba1e00ddb07d7a15eb83dfd6dd51b14a';
 const frmPesquisa = document.querySelector('.pesquisar');
 

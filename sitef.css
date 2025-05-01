@@ -240,25 +240,32 @@ body{
     pointer-events: auto; 
 }
 .menu-ico{
-    display: none;
-    position: absolute; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 100%;
+    background-color: #FF595E;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    visibility: hidden;
     z-index: 100;
+}
+.menu-ico.show {
+    transform: translateX(0);
+    visibility: visible;
 }
 .menu-listas{
     display: flex;
-    position: relative;
     flex-direction: column;
     padding-bottom: 1rem;
-    top: -200px;
     background-color: #FF595E;
     align-items: center;
-    width: 150px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     padding: 40px;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    z-index: 100;
-
 }
 .menu-listas .nav-item{
     display: block;
@@ -319,3 +326,23 @@ div.item img{
 .voltar:active{
     transform: scale(1);
 }
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #222;
+    transform: translateX(-100%); /* Começa escondido fora da tela */
+    transition: transform 0.3s ease;
+  }
+  
+ #menu.show {
+    transform: translateX(0); /* Anima para dentro da tela */
+}
+
+body {
+    overflow-x: hidden; /* impede qualquer conteúdo de vazar horizontalmente */
+}
+
